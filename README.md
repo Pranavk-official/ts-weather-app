@@ -1,3 +1,4 @@
+# ts-weather-app
 This repository is using ReactJS, TypeScript and TailwindCSS. It also runs on node 18 (see .nvmrc) and has a formatter - prettier. If you're running this for the first time - please ensure you have nvm (node version manager).
 
 ## How To Run
@@ -13,4 +14,3 @@ After everything is installed, run `npm run start` and navigate to http://localh
 ## API Calls
 
 Please Note: The OpenWeather API is using an API Key. In the repository you fill find a `.env.example` file which you need to copy/save as `.env` and paste the value of your API key (which you can get when you register on the OpenWeather API website).
-# ts-weather-app
