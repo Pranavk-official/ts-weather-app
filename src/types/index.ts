@@ -37,7 +37,7 @@ export type forecastType = {
         all: number
       }
       pop: number
-      visiblility: number
+      visibility: number
     },
   ]
 }

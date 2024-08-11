@@ -113,8 +113,8 @@ const Forecast = ({ data }: Props): JSX.Element => {
             <Tile
               icon="visibility"
               title="Visibility"
-              info={`${(today.visiblility / 1000).toFixed()} km`}
-              description={getVisibilityValue(today.visiblility)}
+              info={`${(today.visibility / 1000).toFixed()} km`}
+              description={getVisibilityValue(today.visibility)}
             />
           </section>
         </div>

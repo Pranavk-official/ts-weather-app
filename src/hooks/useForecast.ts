@@ -33,6 +33,7 @@ const useForecast = () => {
         }
         setForecast(forecastData)
       })
+      .catch((e) => console.log(e))
   }
   const onSubmit = () => {
     if (!city) return

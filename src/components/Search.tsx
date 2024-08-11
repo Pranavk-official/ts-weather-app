@@ -33,16 +33,17 @@ const Search = ({
           className="px-2 py-1 rounded-l-md border-2 border-white"
         />
         <ul className="absolute top-9 bg-white ml-1 rounded-b-md">
-          {options.map((option: optionType, index: number) => (
-            <li key={option.name + '-' + index}>
-              <button
-                onClick={() => onOptionSelect(option)}
-                className="text-left text-sm w-full hover:bg-zinc-700 hover:text-white px-2 py-1 cursor-pointer"
-              >
-                {option.name} {option.country}
-              </button>
-            </li>
-          ))}
+          {options.length > 0 &&
+            options?.map((option: optionType, index: number) => (
+              <li key={option.name + '-' + index}>
+                <button
+                  onClick={() => onOptionSelect(option)}
+                  className="text-left text-sm w-full hover:bg-zinc-700 hover:text-white px-2 py-1 cursor-pointer"
+                >
+                  {option.name} {option.country}
+                </button>
+              </li>
+            ))}
         </ul>
         <button
           onClick={onSubmit}
