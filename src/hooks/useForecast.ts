@@ -12,6 +12,7 @@ const useForecast = () => {
     )
       .then((res) => res.json())
       .then((data) => setOptions(data))
+      .catch((err) => console.log(err))
   }
 
   const onInputChange = (e: ChangeEvent<HTMLInputElement>) => {
